@@ -7,5 +7,8 @@ import (
 )
 
 func Print(i *info.Info) {
+	if i == nil {
+		i = info.DefaultInfo()
+	}
 	fmt.Println(i)
 }
